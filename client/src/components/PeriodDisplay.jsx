@@ -1,14 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FetchScheduleEffect } from "../firebase/firebase";
+import findPeriod from "../utils/findPeriod";
 
 const PeriodDisplay = () => {
-  useEffect(() => {
-    console.log("HELLO");
-  }, [])
-
   const { schedule } = FetchScheduleEffect();
-  console.log(schedule);
-  return <div>Hi</div>;
+
+  useEffect(() => {
+    //setIntervalId(setInterval(() => tick(), 1000));
+
+    if (schedule) {
+      findPeriod(schedule["periods"]);
+    }
+
+    //return () =>
+  }, [schedule]);
+
+  return (
+    <div>
+      <text>Hi</text>
+      <text>Hi</text>
+    </div>
+  );
 };
 
 export default PeriodDisplay;
