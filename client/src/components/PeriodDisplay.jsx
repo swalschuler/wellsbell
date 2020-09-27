@@ -1,44 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { FetchScheduleEffect } from "../firebase/firebase";
-import findPeriod from "../utils/findPeriod";
-import styles from './PeriodDisplay.module.css';
+import styles from "./PeriodDisplay.module.css";
 
-const PeriodDisplay = () => {
-  const { schedule } = FetchScheduleEffect();
+const PeriodDisplay = ({ period }) => {
   const [periodRef, setPeriodRef] = useState();
 
   useEffect(() => {
     if (periodRef) {
       // eslint-disable-next-line
-      const shine = new Shine(periodRef)
-      window.addEventListener('mousemove', function(event) {
+      const shine = new Shine(periodRef);
+      const handleMouseMove = (event) => {
         shine.light.position.x = event.clientX;
         shine.light.position.y = event.clientY;
         shine.config.opacity = 0.12;
         shine.config.opacityPow = 2;
         shine.draw();
-      }, false);
+      };
+      window.addEventListener("mousemove", handleMouseMove, false);
       return () => {
-        window.removeEventListener('mousemove');
-      }
+        window.removeEventListener("mousemove", handleMouseMove);
+        shine.destroy();
+      };
     }
-  }, [periodRef])
-
-  useEffect(() => {
-    //setIntervalId(setInterval(() => tick(), 1000));
-
-    if (schedule) {
-      findPeriod(schedule["periods"]);
-    }
-
-    //return () =>
-  }, [schedule]);
+  }, [periodRef, period]);
 
   return (
     <div className={styles.periodContainer}>
-      <h1 ref={setPeriodRef} className={styles.period}>1st period.</h1>
+      <h1 ref={setPeriodRef} className={styles.period}>
+        {period}
+      </h1>
     </div>
-  )
+  );
 };
 
 export default PeriodDisplay;
