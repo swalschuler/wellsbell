@@ -1,13 +1,13 @@
-/* html {
-  background: rgb(150,144,255);
-  background: linear-gradient(90deg, rgba(150,144,255,1) 0%, rgba(158,239,255,1) 100%);
-} */
-
-h1 {
-  font-family: Heebo;
-  font-weight: 900;
+.main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
-p {
-  font-family: lato;
+body {
+  background-color: #d0e6e3;
+  font-family: Heebo;
+  font-weight: 900;
 }

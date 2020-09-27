@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./PeriodDisplay.module.css";
 
-const PeriodDisplay = ({ period }) => {
+const PeriodDisplay = ({ period, periodInfo }) => {
   const [periodRef, setPeriodRef] = useState();
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const PeriodDisplay = ({ period }) => {
       <h1 ref={setPeriodRef} className={styles.period}>
         {period}
       </h1>
+      <h2 className={styles.periodInfo}>{periodInfo}</h2>
     </div>
   );
 };
