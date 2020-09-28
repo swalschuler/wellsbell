@@ -11,3 +11,13 @@ body {
   font-family: Heebo;
   font-weight: 900;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #dbe7db;
+  color: #5d3c59;
+  text-align: center;
+}
