@@ -12,7 +12,7 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 });
 
 exports.updateSchedule = functions.pubsub
-  .schedule("0 0 0 * * ?") // Every day at 12AM
+  .schedule("0 0 * * *") // Every day at 12AM
   .timeZone("America/Los_Angeles") // Users can choose timezone - default is America/Los_Angeles
   .onRun((context) => {
     const scheduleNames = [
@@ -30,6 +30,13 @@ exports.updateSchedule = functions.pubsub
     today = today.getDay(); // sunday - saturday; 0-6
 
     let newScheduleRef = db.collection("schedules").doc(scheduleNames[today]);
-    const periods = await newScheduleRef.get();
-    await db.collection("schedules").doc("today").set(periods.data());
-});
+
+    newScheduleRef
+      .get()
+      .then((periods) => {
+        return db.collection("schedules").doc("today").set(periods.data());
+      })
+      .catch((e) => {
+        functions.logger.error(e);
+      });
+  });
