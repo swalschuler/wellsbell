@@ -28,13 +28,11 @@ exports.updateSchedule = functions.pubsub
     const db = admin.firestore();
     const today = new Date().getDay(); // sunday - saturday; 0-6
 
-    functions.logger.error("Entering");
+    functions.logger.info("Today: " + today + " : " + scheduleNames[today]);
+    functions.logger.info(new Date());
 
     const newScheduleRef = db.collection("schedules").doc(scheduleNames[today]);
     const periods = await newScheduleRef.get();
-
-    functions.logger.error("periods: ");
-    functions.logger.error(periods);
 
     await db.collection("schedules").doc("today").set(periods?.data()!);
   });

@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
+import useSound from "use-sound";
 import styles from "./PeriodDisplay.module.css";
+import bellSfx from "../sounds/bell.mp3";
 
 const PeriodDisplay = ({ period, periodInfo }) => {
   const [periodRef, setPeriodRef] = useState();
+  const [play] = useSound(bellSfx);
 
   useEffect(() => {
+    play();
     if (periodRef) {
       // eslint-disable-next-line
       const shine = new Shine(periodRef);
