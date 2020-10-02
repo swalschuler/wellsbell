@@ -34,9 +34,7 @@ export default function App() {
             <div className="main">
               <PeriodDisplay period={displayText} periodInfo={periodInfoText} />
             </div>
-            <div className="footer">
-              <text>Made with ☕ by Mr. Alschuler</text>
-            </div>
+            <div className="footer">Made with ☕ by Mr. Alschuler</div>
           </div>
         </Route>
       </Switch>

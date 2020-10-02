@@ -1,9 +1,9 @@
 .period {
   line-height: 90%;
-  font-size: 125px;
-  user-select: none;
+  font-size: 8vw;
   color: #5d3c59;
 }
 .periodInfo {
   color: #5d3c59;
+  font-size: 3vw;
 }
