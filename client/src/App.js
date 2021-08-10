@@ -14,7 +14,7 @@ export default function App() {
   let periodInfoText = "";
   if (currentPeriod) {
     displayText = currentPeriod.name;
-    periodInfoText = minutesLeft;
+    periodInfoText = minutesLeft ? minutesLeft + " minutes left" : "";
   } else {
     displayText = "No period right now.";
     periodInfoText = "Go do your homework!";
