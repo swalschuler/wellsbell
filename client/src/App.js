@@ -6,18 +6,15 @@ import PeriodDisplay from "./components/PeriodDisplay";
 import { FetchScheduleEffect } from "./firebase/firebase";
 
 export default function App() {
-  const { currentPeriod, loading } = FetchScheduleEffect();
+  const { currentPeriod, minutesLeft } = FetchScheduleEffect(6);
 
   console.log("Current period " + currentPeriod);
-  console.log(currentPeriod);
 
   let displayText = "";
   let periodInfoText = "";
-  if (loading) {
-    displayText = "Loading...";
-  } else if (currentPeriod) {
+  if (currentPeriod) {
     displayText = currentPeriod.name;
-    periodInfoText = currentPeriod.info;
+    periodInfoText = minutesLeft;
   } else {
     displayText = "No period right now.";
     periodInfoText = "Go do your homework!";
