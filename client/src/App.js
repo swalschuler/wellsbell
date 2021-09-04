@@ -1,12 +1,20 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
 import Admin from "./components/Admin";
 import "./style.css";
 import PeriodDisplay from "./components/PeriodDisplay";
 import { FetchScheduleEffect } from "./firebase/firebase";
+import Icons from "./components/Icons";
 
 export default function App() {
-  const { currentPeriod, minutesLeft } = FetchScheduleEffect(6);
+  const [grade, setGrade] = useState(false);
+  const { currentPeriod, minutesLeft } = FetchScheduleEffect(grade ? 7 : 6);
 
   console.log("Current period " + currentPeriod);
 
@@ -28,6 +36,9 @@ export default function App() {
         </Route>
         <Route path="/">
           <div className="wrapper">
+            <div className="header">
+              <Icons grade={grade} setGrade={setGrade} />
+            </div>
             <div className="main">
               <PeriodDisplay period={displayText} periodInfo={periodInfoText} />
             </div>
