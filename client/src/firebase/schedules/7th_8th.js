@@ -12,6 +12,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "School starts soon",
+      start: {
+        hour: 8,
+        minute: 30,
+      },
+      end: {
+        hour: 8,
+        minute: 35,
+      },
+    },
+    {
       name: "1 period",
       start: {
         hour: 8,
@@ -20,6 +31,17 @@ export const schedule_7_8 = {
       end: {
         hour: 9,
         minute: 30,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 9,
+        minute: 30,
+      },
+      end: {
+        hour: 9,
+        minute: 34,
       },
     },
     {
@@ -34,6 +56,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 27,
+      },
+      end: {
+        hour: 10,
+        minute: 31,
+      },
+    },
+    {
       name: "3 period",
       start: {
         hour: 10,
@@ -45,6 +78,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "Passing period",
+      start: {
+        hour: 11,
+        minute: 24,
+      },
+      end: {
+        hour: 11,
+        minute: 28,
+      },
+    },
+    {
       name: "4 period",
       start: {
         hour: 11,
@@ -53,6 +97,17 @@ export const schedule_7_8 = {
       end: {
         hour: 12,
         minute: 21,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 12,
+        minute: 21,
+      },
+      end: {
+        hour: 12,
+        minute: 25,
       },
     },
     {
@@ -78,6 +133,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "Passing period",
+      start: {
+        hour: 13,
+        minute: 11,
+      },
+      end: {
+        hour: 13,
+        minute: 15,
+      },
+    },
+    {
       name: "5 period",
       start: {
         hour: 13,
@@ -89,122 +155,21 @@ export const schedule_7_8 = {
       },
     },
     {
-      name: "6 period",
+      name: "Passing period",
       start: {
         hour: 14,
-        minute: 12,
-      },
-      end: {
-        hour: 15,
-        minute: 5,
-      },
-    },
-  ],
-  tuesday: [
-    {
-      name: "0 period",
-      start: {
-        hour: 7,
-        minute: 40,
-      },
-      end: {
-        hour: 8,
-        minute: 30,
-      },
-    },
-    {
-      name: "1 period",
-      start: {
-        hour: 8,
-        minute: 35,
-      },
-      end: {
-        hour: 9,
-        minute: 24,
-      },
-    },
-    {
-      name: "2 period",
-      start: {
-        hour: 9,
-        minute: 28,
-      },
-      end: {
-        hour: 10,
-        minute: 16,
-      },
-    },
-    {
-      name: "3 period",
-      start: {
-        hour: 10,
-        minute: 20,
-      },
-      end: {
-        hour: 11,
         minute: 8,
       },
-    },
-    {
-      name: "Academic prep",
-      start: {
-        hour: 11,
-        minute: 12,
-      },
-      end: {
-        hour: 11,
-        minute: 41,
-      },
-    },
-    {
-      name: "4 period",
-      start: {
-        hour: 11,
-        minute: 45,
-      },
-      end: {
-        hour: 12,
-        minute: 33,
-      },
-    },
-    {
-      name: "Advisory",
-      start: {
-        hour: 12,
-        minute: 37,
-      },
-      end: {
-        hour: 12,
-        minute: 46,
-      },
-    },
-    {
-      name: "Lunch",
-      start: {
-        hour: 12,
-        minute: 46,
-      },
-      end: {
-        hour: 13,
-        minute: 21,
-      },
-    },
-    {
-      name: "5 period",
-      start: {
-        hour: 13,
-        minute: 25,
-      },
       end: {
         hour: 14,
-        minute: 13,
+        minute: 12,
       },
     },
     {
       name: "6 period",
       start: {
         hour: 14,
-        minute: 17,
+        minute: 12,
       },
       end: {
         hour: 15,
@@ -225,6 +190,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "School starts soon",
+      start: {
+        hour: 8,
+        minute: 30,
+      },
+      end: {
+        hour: 8,
+        minute: 35,
+      },
+    },
+    {
       name: "1 period",
       start: {
         hour: 8,
@@ -233,6 +209,17 @@ export const schedule_7_8 = {
       end: {
         hour: 9,
         minute: 20,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 9,
+        minute: 20,
+      },
+      end: {
+        hour: 9,
+        minute: 24,
       },
     },
     {
@@ -247,6 +234,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 9,
+      },
+      end: {
+        hour: 10,
+        minute: 13,
+      },
+    },
+    {
       name: "3 period",
       start: {
         hour: 10,
@@ -255,6 +253,17 @@ export const schedule_7_8 = {
       end: {
         hour: 10,
         minute: 58,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 58,
+      },
+      end: {
+        hour: 11,
+        minute: 2,
       },
     },
     {
@@ -280,6 +289,17 @@ export const schedule_7_8 = {
       },
     },
     {
+      name: "Passing period",
+      start: {
+        hour: 12,
+        minute: 22,
+      },
+      end: {
+        hour: 12,
+        minute: 26,
+      },
+    },
+    {
       name: "5 period",
       start: {
         hour: 12,
@@ -288,6 +308,17 @@ export const schedule_7_8 = {
       end: {
         hour: 13,
         minute: 11,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 13,
+        minute: 11,
+      },
+      end: {
+        hour: 13,
+        minute: 15,
       },
     },
     {
