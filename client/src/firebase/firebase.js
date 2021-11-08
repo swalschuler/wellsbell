@@ -40,7 +40,7 @@ export const FetchScheduleEffect = (grade) => {
     }
 
     return () => clearInterval(interval);
-  }, [currentPeriod, minutesLeft]);
+  }, [currentPeriod, minutesLeft, grade]);
 
   return { currentPeriod, minutesLeft };
 };

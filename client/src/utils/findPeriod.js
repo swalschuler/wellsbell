@@ -12,7 +12,7 @@ const findPeriod = (schedule) => {
   } else if (currentDay == 2 || currentDay == 4) {
     periods = schedule.monday; // TODO: When AP introduced, update to be Tuesday's schedule (and update sched.json)
   } else if (currentDay == 3) {
-    periods = periods.wednesday;
+    periods = schedule.wednesday;
   }
 
   // Find which period we are in
