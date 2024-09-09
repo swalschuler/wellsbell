@@ -1,6 +1,8 @@
-// Take an array of periods (each with a start and end time)
-// and return the period we are in. If we are not in a period,
-// (or there is no matching period) return null.
+/**
+ * Take an array of periods (each with a start and end time)
+ * and return the period we are in. If we are not in a period,
+ * (or there is no matching period) return null.
+ */
 const findPeriod = (schedule) => {
   const currentDate = new Date();
   const currentDay = currentDate.getDay();
@@ -10,9 +12,13 @@ const findPeriod = (schedule) => {
   if (currentDay == 1 || currentDay == 5) {
     periods = schedule.monday;
   } else if (currentDay == 2 || currentDay == 4) {
-    periods = schedule.monday; // TODO: When AP introduced, update to be Tuesday's schedule (and update sched.json)
+    periods = schedule.tuesday;
   } else if (currentDay == 3) {
     periods = schedule.wednesday;
+  }
+
+  if (!periods) {
+    return null;
   }
 
   // Find which period we are in
