@@ -30,135 +30,346 @@ export const schedule_6 = {
       },
       end: {
         hour: 9,
-        minute: 30,
+        minute: 25,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 9,
-        minute: 30,
+        minute: 25,
       },
       end: {
         hour: 9,
-        minute: 34,
+        minute: 29,
       },
     },
     {
       name: "2 period",
       start: {
         hour: 9,
-        minute: 34,
+        minute: 29,
       },
       end: {
         hour: 10,
-        minute: 29,
+        minute: 19,
       },
     },
     {
       name: "Nutrition Break",
       start: {
         hour: 10,
-        minute: 29,
+        minute: 19,
       },
       end: {
         hour: 10,
-        minute: 37,
+        minute: 26,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 10,
-        minute: 37,
+        minute: 26,
       },
       end: {
         hour: 10,
-        minute: 41,
+        minute: 30,
+      },
+    },
+    {
+      name: "AVID Advisory",
+      start: {
+        hour: 10,
+        minute: 30,
+      },
+      end: {
+        hour: 10,
+        minute: 55,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 55,
+      },
+      end: {
+        hour: 10,
+        minute: 59,
       },
     },
     {
       name: "3 period",
       start: {
         hour: 10,
-        minute: 41,
+        minute: 59,
       },
       end: {
         hour: 11,
-        minute: 33,
+        minute: 49,
       },
     },
     {
       name: "6th grade lunch",
       start: {
         hour: 11,
-        minute: 33,
+        minute: 49,
       },
       end: {
         hour: 12,
-        minute: 8,
+        minute: 23,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 12,
-        minute: 8,
+        minute: 23,
       },
       end: {
         hour: 12,
-        minute: 12,
+        minute: 27,
       },
     },
     {
       name: "4 period",
       start: {
         hour: 12,
-        minute: 12,
+        minute: 27,
       },
       end: {
         hour: 13,
-        minute: 7,
+        minute: 17,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 13,
-        minute: 7,
+        minute: 17,
       },
       end: {
         hour: 13,
-        minute: 11,
+        minute: 21,
       },
     },
     {
       name: "5 period",
       start: {
         hour: 13,
-        minute: 11,
+        minute: 21,
       },
       end: {
         hour: 14,
-        minute: 6,
+        minute: 11,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 14,
-        minute: 6,
+        minute: 11,
       },
       end: {
         hour: 14,
-        minute: 10,
+        minute: 15,
       },
     },
     {
       name: "6 period",
       start: {
         hour: 14,
-        minute: 10,
+        minute: 15,
+      },
+      end: {
+        hour: 15,
+        minute: 5,
+      },
+    },
+  ],
+  tuesday: [
+    {
+      name: "0 period",
+      start: {
+        hour: 7,
+        minute: 40,
+      },
+      end: {
+        hour: 8,
+        minute: 30,
+      },
+    },
+    {
+      name: "School starts soon",
+      start: {
+        hour: 8,
+        minute: 30,
+      },
+      end: {
+        hour: 8,
+        minute: 35,
+      },
+    },
+    {
+      name: "1 period",
+      start: {
+        hour: 8,
+        minute: 35,
+      },
+      end: {
+        hour: 9,
+        minute: 25,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 9,
+        minute: 25,
+      },
+      end: {
+        hour: 9,
+        minute: 29,
+      },
+    },
+    {
+      name: "2 period",
+      start: {
+        hour: 9,
+        minute: 29,
+      },
+      end: {
+        hour: 10,
+        minute: 19,
+      },
+    },
+    {
+      name: "Nutrition Break",
+      start: {
+        hour: 10,
+        minute: 19,
+      },
+      end: {
+        hour: 10,
+        minute: 26,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 26,
+      },
+      end: {
+        hour: 10,
+        minute: 30,
+      },
+    },
+    {
+      name: "Academic Prep",
+      start: {
+        hour: 10,
+        minute: 30,
+      },
+      end: {
+        hour: 10,
+        minute: 55,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 10,
+        minute: 55,
+      },
+      end: {
+        hour: 10,
+        minute: 59,
+      },
+    },
+    {
+      name: "3 period",
+      start: {
+        hour: 10,
+        minute: 59,
+      },
+      end: {
+        hour: 11,
+        minute: 49,
+      },
+    },
+    {
+      name: "6th grade lunch",
+      start: {
+        hour: 11,
+        minute: 49,
+      },
+      end: {
+        hour: 12,
+        minute: 23,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 12,
+        minute: 23,
+      },
+      end: {
+        hour: 12,
+        minute: 27,
+      },
+    },
+    {
+      name: "4 period",
+      start: {
+        hour: 12,
+        minute: 27,
+      },
+      end: {
+        hour: 13,
+        minute: 17,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 13,
+        minute: 17,
+      },
+      end: {
+        hour: 13,
+        minute: 21,
+      },
+    },
+    {
+      name: "5 period",
+      start: {
+        hour: 13,
+        minute: 21,
+      },
+      end: {
+        hour: 14,
+        minute: 11,
+      },
+    },
+    {
+      name: "Passing period",
+      start: {
+        hour: 14,
+        minute: 11,
+      },
+      end: {
+        hour: 14,
+        minute: 15,
+      },
+    },
+    {
+      name: "6 period",
+      start: {
+        hour: 14,
+        minute: 15,
       },
       end: {
         hour: 15,
@@ -197,146 +408,135 @@ export const schedule_6 = {
       },
       end: {
         hour: 9,
-        minute: 15,
+        minute: 23,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 9,
-        minute: 15,
+        minute: 23,
       },
       end: {
         hour: 9,
-        minute: 19,
+        minute: 27,
       },
     },
     {
       name: "2 period",
       start: {
         hour: 9,
-        minute: 19,
+        minute: 27,
       },
       end: {
-        hour: 9,
-        minute: 59,
+        hour: 10,
+        minute: 10,
       },
     },
     {
-      name: "Passing period",
+      name: "Nutrition Break",
       start: {
-        hour: 9,
-        minute: 59,
+        hour: 10,
+        minute: 10,
       },
       end: {
         hour: 10,
-        minute: 5,
-      },
-    },
-    {
-      name: "Academic Prep",
-      start: {
-        hour: 10,
-        minute: 5,
-      },
-      end: {
-        hour: 10,
-        minute: 29,
+        minute: 17,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 10,
-        minute: 29,
+        minute: 17,
       },
       end: {
         hour: 10,
-        minute: 33,
+        minute: 21,
       },
     },
     {
       name: "3 period",
       start: {
         hour: 10,
-        minute: 33,
+        minute: 21,
       },
       end: {
         hour: 11,
-        minute: 13,
+        minute: 4,
       },
     },
     {
-      name: "Lunch",
+      name: "6th grade lunch",
       start: {
         hour: 11,
-        minute: 13,
+        minute: 4,
       },
       end: {
         hour: 11,
-        minute: 48,
+        minute: 39,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 11,
-        minute: 48,
+        minute: 39,
       },
       end: {
         hour: 11,
-        minute: 52,
+        minute: 43,
       },
     },
     {
       name: "4 period",
       start: {
         hour: 11,
-        minute: 52,
+        minute: 43,
       },
       end: {
         hour: 12,
-        minute: 32,
+        minute: 26,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 12,
-        minute: 32,
+        minute: 26,
       },
       end: {
         hour: 12,
-        minute: 36,
+        minute: 30,
       },
     },
     {
       name: "5 period",
       start: {
         hour: 12,
-        minute: 36,
+        minute: 30,
       },
       end: {
         hour: 13,
-        minute: 16,
+        minute: 13,
       },
     },
     {
       name: "Passing period",
       start: {
         hour: 13,
-        minute: 16,
+        minute: 13,
       },
       end: {
         hour: 13,
-        minute: 20,
+        minute: 17,
       },
     },
     {
       name: "6 period",
       start: {
         hour: 13,
-        minute: 20,
+        minute: 17,
       },
       end: {
         hour: 14,
