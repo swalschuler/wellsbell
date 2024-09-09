@@ -1,6 +1,10 @@
-# react-kvcqcf
+# Deploy
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-kvcqcf)
+```
+cd client
+npm run build
+firebase deploy --only hosting
+```
 
 ## Note:
 
