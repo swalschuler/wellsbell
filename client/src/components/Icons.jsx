@@ -1,11 +1,11 @@
 import React from "react";
 import Toggle from "react-toggle";
-import "react-toggle/style.css"; // for ES6 modules
+import useStore from "../state/store";
+import "react-toggle/style.css";
 
-const Icons = ({ grade, setGrade }) => {
-  const handleGradeToggle = (e) => {
-    setGrade(e.target.checked);
-  };
+const Icons = ({ grade }) => {
+  const toggle = useStore((state) => state.toggle);
+
   return (
     <div>
       <span style={{ paddingRight: "10px" }}>
@@ -14,7 +14,7 @@ const Icons = ({ grade, setGrade }) => {
       <Toggle
         className="gradeToggle"
         checked={grade}
-        onChange={handleGradeToggle}
+        onChange={toggle}
         icons={{
           checked: null,
           unchecked: null,
