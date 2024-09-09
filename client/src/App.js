@@ -16,8 +16,6 @@ export default function App() {
   const [grade, setGrade] = useState(false);
   const { currentPeriod, minutesLeft } = FetchScheduleEffect(grade ? 7 : 6);
 
-  console.log("Current period " + currentPeriod);
-
   let displayText = "";
   let periodInfoText = "";
   if (currentPeriod) {
@@ -31,9 +29,9 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/admin">
+        {/* <Route path="/admin">
           <Admin />
-        </Route>
+        </Route> */}
         <Route path="/">
           <div className="wrapper">
             <div className="header">
