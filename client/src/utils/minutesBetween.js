@@ -3,8 +3,7 @@
 const minutesBetween = (d1, d2) => {
   const diffInMilliseconds = Math.abs(d1 - d2);
   const minutes = Math.floor(diffInMilliseconds / 1000 / 60);
-  console.log(minutes);
-  console.log("foo");
+
   return minutes;
 };
 
